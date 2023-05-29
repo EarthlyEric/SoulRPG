@@ -1,4 +1,6 @@
 {
-	"parent": "magic_crystal",
-	"texture_size": [128, 128]
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "soulrpg:items/magic_crystal"
+	}
 }
