@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "soulrpg",
+	"version": "${version}",
+	"name": "SoulRPG",
+	"description": "SoulRPG will infuse Minecraft with RPG elements",
+	"authors": [
+		"EarthlyEric6",
+		"Destiny Soul Studio"
+	],
+	"contact": {
+		"homepage": "https://destinysoul.eu.org/",
+		"sources": "https://destinysoul.eu.org/"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/soulrpg/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.destinysoul.soulrpg.SoulRPG"
+		],
+		"client": [
+			"dev.destinysoul.soulrpg.SoulRPGClient"
+		],
+		"fabric-datagen": [
+			"dev.destinysoul.soulrpg.SoulRPGDataGenerator"
+		]
+	},
+	"mixins": [
+		"soulrpg.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
