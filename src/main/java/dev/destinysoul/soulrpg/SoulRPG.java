@@ -1,6 +1,6 @@
 package dev.destinysoul.soulrpg;
 
-import dev.destinysoul.soulrpg.items.Magic.MagicClass;
+import dev.destinysoul.soulrpg.magic.MagicClass;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;

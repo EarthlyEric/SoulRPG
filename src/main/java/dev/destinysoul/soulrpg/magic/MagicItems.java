@@ -1,4 +1,4 @@
-package dev.destinysoul.soulrpg.items.Magic;
+package dev.destinysoul.soulrpg.magic;
 
 import dev.destinysoul.soulrpg.SoulRPG;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;

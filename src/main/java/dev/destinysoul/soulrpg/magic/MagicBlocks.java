@@ -1,4 +1,4 @@
-package dev.destinysoul.soulrpg.items.Magic;
+package dev.destinysoul.soulrpg.magic;
 
 import dev.destinysoul.soulrpg.SoulRPG;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -16,12 +16,9 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class MagicBlocks {
-    public static final Block magic_crystal;
-
-    static {
-        magic_crystal = registerBlock("magic_crystal_ore",
+    public static final Block magic_crystal_ore = registerBlock("magic_crystal_ore",
                 new ExperienceDroppingBlock(FabricBlockSettings.of(Material.METAL).strength(2.5f).requiresTool(), UniformIntProvider.create(1, 5)), MagicClass.Magic);
-    }
+
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
