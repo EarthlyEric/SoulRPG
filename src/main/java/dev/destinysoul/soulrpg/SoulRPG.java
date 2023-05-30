@@ -1,6 +1,6 @@
 package dev.destinysoul.soulrpg;
 
-import dev.destinysoul.soulrpg.items.MagicItems;
+import dev.destinysoul.soulrpg.items.Magic.MagicClass;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -20,6 +20,6 @@ public class SoulRPG implements ModInitializer {
         // Proceed with mild caution.
 
         LOGGER.info("SoulRPG Initializing...");
-        MagicItems.registerItems();
+        MagicClass.register();
     }
 }

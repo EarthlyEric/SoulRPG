@@ -1,4 +1,6 @@
 {
+  "block.soulrpg.magic_crystal_ore": "魔晶石礦",
   "item.soulrpg.magic_crystal": "魔晶石",
+  "item.soulrpg.uncharged_magic_crystal": "失活魔晶石",
   "itemgroup.magic": "SoulRPG魔法"
 }

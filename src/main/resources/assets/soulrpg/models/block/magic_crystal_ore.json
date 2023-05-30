@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "soulrpg:block/magic_crystal_ore"
+  }
+}
