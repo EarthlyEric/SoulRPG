@@ -1,9 +1,0 @@
-jobs:
-  build:
-    docker:
-      - image: cimg/openjdk:19.0.2
-    steps:
-      - checkout
-      - run: chmod +x ./gradlew
-      - run: ./gradlew build
-
