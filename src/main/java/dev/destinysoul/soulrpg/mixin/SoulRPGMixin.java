@@ -1,15 +1,16 @@
 package dev.destinysoul.soulrpg.mixin;
 
-import net.minecraft.server.MinecraftServer;
+import dev.destinysoul.soulrpg.SoulRPG;
+import net.minecraft.client.gui.screen.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-@Mixin(MinecraftServer.class)
+@Mixin(TitleScreen.class)
 public class SoulRPGMixin {
-	@Inject(at = @At("HEAD"), method = "loadWorld")
+	@Inject(at = @At("HEAD"), method = "init()V")
 	private void init(CallbackInfo info) {
-		// This code is injected into the start of MinecraftServer.loadWorld()V
+		SoulRPG.LOGGER.info("SoulRPG Mixin is Ready ! ");
 	}
 }

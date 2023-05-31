@@ -1,4 +1,7 @@
 package dev.destinysoul.soulrpg.utils;
 
-public class PlayerNBTInterface {
+import net.minecraft.nbt.NbtCompound;
+
+public interface PlayerNBTInterface {
+    NbtCompound getPersistentData();
 }

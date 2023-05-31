@@ -7,16 +7,17 @@ import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawableHelper;
 import net.minecraft.client.render.GameRenderer;
 import net.minecraft.client.util.math.MatrixStack;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.Identifier;
 
 public class MPHUDOverlay implements HudRenderCallback {
-    public static final Identifier empty_mp_bar = new Identifier(SoulRPG.ID,"textures/gui/empty_mp_bar.png");
+    public static final Identifier empty_mp_bar = new Identifier(SoulRPG.ID,"textures/gui/empty_bar.png");
     @Override
     public void onHudRender(MatrixStack matrixStack, float tickDelta) {
         // init HUD position
         int x = 0;
         int y = 0;
-
         MinecraftClient client = MinecraftClient.getInstance();
         if(client != null){
             y = client.getWindow().getScaledHeight();
@@ -26,8 +27,6 @@ public class MPHUDOverlay implements HudRenderCallback {
         RenderSystem.setShaderColor(1.0F,1.0F,1.0F,1.0F);
         RenderSystem.setShaderTexture(0,empty_mp_bar);
         DrawableHelper.drawTexture(matrixStack,x,y-10,0,0,10,104,10,104,10);
-
-
 
     }
     public static void register(){
