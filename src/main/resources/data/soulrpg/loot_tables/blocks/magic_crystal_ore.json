@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "soulrpg:magic_crystal"
+          "name": "soulrpg:magic_crystal_ore_sand"
         }
       ]
     }

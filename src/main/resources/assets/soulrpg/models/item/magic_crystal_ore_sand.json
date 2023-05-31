@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "soulrpg:item/magic_crystal_ore_sand"
+  }
+}
