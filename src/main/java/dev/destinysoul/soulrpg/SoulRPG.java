@@ -2,6 +2,7 @@ package dev.destinysoul.soulrpg;
 
 import dev.destinysoul.soulrpg.magic.MagicClass;
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.block.entity.BlockEntity;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

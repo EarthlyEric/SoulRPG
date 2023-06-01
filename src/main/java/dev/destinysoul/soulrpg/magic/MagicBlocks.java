@@ -16,7 +16,7 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class MagicBlocks {
     public static final Block magic_crystal_ore = registerBlock("magic_crystal_ore",
-                new ExperienceDroppingBlock(FabricBlockSettings.of(Material.METAL).strength(2.5f).requiresTool(), UniformIntProvider.create(2, 6)));
+            new ExperienceDroppingBlock(FabricBlockSettings.of(Material.METAL).strength(2.5f).requiresTool(), UniformIntProvider.create(2, 6)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

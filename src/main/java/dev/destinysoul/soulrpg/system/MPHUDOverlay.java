@@ -4,11 +4,11 @@ import com.mojang.blaze3d.systems.RenderSystem;
 import dev.destinysoul.soulrpg.SoulRPG;
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.font.Font;
+import net.minecraft.client.font.TextRenderer;
 import net.minecraft.client.gui.DrawableHelper;
 import net.minecraft.client.render.GameRenderer;
 import net.minecraft.client.util.math.MatrixStack;
-import net.minecraft.server.MinecraftServer;
-import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.Identifier;
 
 public class MPHUDOverlay implements HudRenderCallback {
@@ -18,15 +18,19 @@ public class MPHUDOverlay implements HudRenderCallback {
         // init HUD position
         int x = 0;
         int y = 0;
+
+        TextRenderer textRenderer = MinecraftClient.getInstance().inGameHud.getTextRenderer();
+
         MinecraftClient client = MinecraftClient.getInstance();
         if(client != null){
             y = client.getWindow().getScaledHeight();
         }
 
         RenderSystem.setShader(GameRenderer::getPositionTexProgram);
-        RenderSystem.setShaderColor(1.0F,1.0F,1.0F,1.0F);
+        RenderSystem.setShaderColor(1.0f,1.0f,1.0f,1.0f);
         RenderSystem.setShaderTexture(0,empty_mp_bar);
         DrawableHelper.drawTexture(matrixStack,x,y-10,0,0,10,104,10,104,10);
+
 
     }
     public static void register(){
