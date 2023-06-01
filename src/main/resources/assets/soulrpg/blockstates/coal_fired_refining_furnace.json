@@ -1,5 +1,8 @@
 {
   "variants": {
-    "": { "model": "soulrpg:block/coal_fired_refining_furnace" }
+    "facing=north": { "model": "soulrpg:block/coal_fired_refining_furnace" },
+    "facing=east": { "model": "soulrpg:block/coal_fired_refining_furnace", "y": 90 },
+    "facing=south": { "model": "soulrpg:block/coal_fired_refining_furnace", "y": 180 },
+    "facing=west": { "model": "soulrpg:block/coal_fired_refining_furnace", "y": 270 }
   }
 }

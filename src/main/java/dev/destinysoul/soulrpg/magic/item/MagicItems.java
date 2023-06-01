@@ -1,6 +1,7 @@
-package dev.destinysoul.soulrpg.magic;
+package dev.destinysoul.soulrpg.magic.item;
 
 import dev.destinysoul.soulrpg.SoulRPG;
+import dev.destinysoul.soulrpg.magic.MagicClass;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
